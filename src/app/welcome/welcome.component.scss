@@ -1,0 +1,32 @@
+.welcome-card{
+  width: 40%;
+  margin: 30px auto 0 auto
+}
+.type-card{
+  width: 20%;
+}
+.card-title{
+  padding-right: 20%;
+}
+.card-header,
+.card-footer{
+  height: 50px;
+}
+
+.container{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 0 auto;
+  padding: 0;
+}
+.container .card{
+  margin-top: 13px;
+  width: 49%;
+}
+.nav-link{
+  display: inline;
+}

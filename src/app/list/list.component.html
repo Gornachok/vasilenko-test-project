@@ -1,0 +1,26 @@
+<ul class="nav nav-tabs justify-content-center">
+  <li *ngFor="let tabName of ['Income', 'Outcome', 'Loans', 'Investments']; let i = index" class="nav-item">
+    <a 
+      class="nav-link" 
+      [ngClass]="tab == i ? 'active' : ''" 
+      [routerLink]="['./']" 
+      [queryParams]="{ tab: i}"
+    >
+      {{ tabName }}
+    </a>
+  </li>
+</ul>
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of data">
+      <td>{{ transaction.name.first }} {{ transaction.name.last }}</td>
+      <td>{{ transaction.amount }}</td>
+    </tr>
+  </tbody>
+</table>
